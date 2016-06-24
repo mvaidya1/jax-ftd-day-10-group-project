@@ -12,12 +12,8 @@ let server
 let dt = new Date().toLocaleString()
 
 cli
-// <<<<<<< Updated upstream
-//   .mode('connect <port> [host]')
-// =======
   .mode('connect <username> <host> <port>')
-  .delimiter(' ')
-// >>>>>>> Stashed changes
+  .delimiter('connected:')
   .init(function (args, callback) {
     cli._baseExitMode = cli._exitMode
     cli._exitMode = function (args) {
