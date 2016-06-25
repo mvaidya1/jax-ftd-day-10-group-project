@@ -36,9 +36,6 @@ public class ClientHandler implements Runnable, Closeable {
 				Thread.sleep(500);
 				writer.print(echo);
 				writer.flush();
-				Thread.sleep(500);
-				writer.print(echo);
-				writer.flush();
 			}
 			this.close();
 		} catch (IOException | InterruptedException e) {
